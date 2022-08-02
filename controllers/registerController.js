@@ -1,5 +1,5 @@
 const mysql = require('../connection');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const handleNewUser = async (req, res) => {
     const user = req.body.user;

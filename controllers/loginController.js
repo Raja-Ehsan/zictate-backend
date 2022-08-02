@@ -1,7 +1,7 @@
 require('dotenv').config()
 const mysql = require('../connection')
 const jwt = require('jsonwebtoken')
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 const handleLogin = async (req, res) => {
     const username = req.body.user;
     const password = req.body.password;
