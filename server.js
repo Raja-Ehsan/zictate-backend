@@ -47,7 +47,7 @@ app.use('/images',express.static(path.join(__dirname,'public/images')))
 app.use(cookieParser())
 
 app.use(cors({
-    origin: "http://localhost:3000"
+    origin: "https://62e9697c24c22344a52eecf1--deluxe-sable-a44c90.netlify.app"
 }))
 
 app.use(bodyParser.urlencoded({ extended: true }))
