@@ -1,0 +1,26 @@
+
+
+GET  http://localhost:5000/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRWhzYW5SaWF6IiwiaWF0IjoxNjU2MjI0NTY3LCJleHAiOjE2NTYyMjQ1OTd9.6drz5Ox4k1q7MhMh0A7PUjm60-mtwgWwcsN8RuG7yoY
+###
+
+POST  http://localhost:3001/getlikes
+Content-Type: application/json
+
+{
+ "postId":2
+ }
+
+###
+POST  http://localhost:3001/getcomments
+Content-Type: application/json
+
+{
+ "postId":1
+ }
+
+
+###
+
+GET http://localhost:3001/Profile/3
+
