@@ -20,7 +20,7 @@ const addComment=async(req,res)=>{
         const postId=req.body.postId;
         const userId=req.body.userId;
         const text=req.body.text;
-        mysql.query(`Insert into comments(postID,userId,text) values(${postId},${userId},"${text}")`, (err, results, field) => {
+        mysql.query(`Insert into comments(postId,userId,text) values(${postId},${userId},"${text}")`, (err, results, field) => {
             if (err) res.json({ err })
             else if(results) {
                 res.json({message:"posted"})
